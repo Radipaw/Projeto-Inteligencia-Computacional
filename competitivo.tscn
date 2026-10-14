@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://caoyy3ntfysje"]
+
+[ext_resource type="Script" uid="uid://b3csmcwlptbq5" path="res://competitivo.gd" id="1_6h055"]
+
+[node name="Competitivo" type="Node2D" unique_id=1452051315]
+script = ExtResource("1_6h055")
+
+[node name="Label" type="Label" parent="." unique_id=1457397460]
+offset_left = 979.0
+offset_top = 89.0
+offset_right = 1019.0
+offset_bottom = 112.0
+
+[node name="Button" type="Button" parent="." unique_id=21659893]
+offset_left = 1619.0
+offset_top = 20.0
+offset_right = 1905.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 32
+text = "Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

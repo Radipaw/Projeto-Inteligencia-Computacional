@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bgu6r45o525r4"]
+
+[ext_resource type="Script" uid="uid://c2cdonha4a0u8" path="res://node_2d.gd" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D" unique_id=1696572416]
+script = ExtResource("1_wtcfe")
+
+[node name="Label" type="Label" parent="." unique_id=1274914116]
+offset_left = 1098.0
+offset_top = 17.0
+offset_right = 1346.0
+offset_bottom = 106.0
+text = "aaaaaa"
+
+[node name="Button" type="Button" parent="." unique_id=1468921260]
+offset_left = 1619.0
+offset_top = 20.0
+offset_right = 1905.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 32
+text = "Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

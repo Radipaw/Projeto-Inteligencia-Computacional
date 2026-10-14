@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://5pe0c7qq5tka"]
+
+[ext_resource type="Script" uid="uid://c5wed2jjvpepr" path="res://menu.gd" id="1_lti8b"]
+
+[node name="Menu" type="Control" unique_id=1319027152]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lti8b")
+
+[node name="Button" type="Button" parent="." unique_id=1631647072]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21800001
+anchor_top = 0.588
+anchor_right = 0.38200003
+anchor_bottom = 0.77400005
+offset_left = -8.560028
+offset_top = -0.039978027
+offset_right = 0.5599365
+offset_bottom = 0.079956055
+theme_override_font_sizes/font_size = 40
+text = "Simulação
+Weighted A*"
+
+[node name="Button2" type="Button" parent="." unique_id=730944892]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.57100004
+anchor_top = 0.57600003
+anchor_right = 0.748
+anchor_bottom = 0.762
+offset_left = 0.67993164
+offset_top = -0.08001709
+offset_right = -5.160034
+offset_bottom = 0.039978027
+theme_override_font_sizes/font_size = 40
+text = "Simulação
+Expectiminimax"
+
+[node name="Label" type="Label" parent="." unique_id=778335638]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Label2" type="Label" parent="." unique_id=1696140270]
+layout_mode = 0
+offset_right = 547.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 41
+text = "Projeto prático de buscas e árvores de decisão
+
+Grupo:
+Elissandra Abdon
+Igor Acatauassu
+Renan Abreu"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
